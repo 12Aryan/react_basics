@@ -1,0 +1,6 @@
+.movie-card {
+  width: 16rem;
+  border-radius: 24px;
+  padding: 1rem;
+  box-shadow: rgb(105 105 105 / 86%) 0px 0px 15px;
+}

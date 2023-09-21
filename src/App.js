@@ -1,16 +1,14 @@
 import React, { createContext, useState } from "react";
-import Card from "./Components/Movies/Card";
-import movieData from "./Components/Movies/MovieData.json";
-import Header from "./Components/Header/Header";
-import UseState from "./Components/UseState/UseState";
-import Record from "./Components/Record keeper/Record";
-import UseEffect from "./Components/UseEffect/UseEffect";
-import UseRef from "./Components/UseRef/UseRef";
-import UseReducer from "./Components/UseReducer/UseReducer";
-import CustomHook from "./Components/Custom Hook/CustomHook";
-import UseContext from "./Components/UseContext/UseContext";
+import UseState from "./Components/Hooks/UseState/UseState";
+import Record from "./Components/Applications/Record keeper/Record";
+import UseRef from "./Components/Hooks/UseRef/UseRef";
+import UseReducer from "./Components/Hooks/UseReducer/UseReducer";
+import CustomHook from "./Components/Hooks/Custom Hook/CustomHook";
+import UseContext from "./Components/Hooks/UseContext/UseContext";
+import UseEffect from "./Components/Hooks/UseEffect/UseEffect";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Wrapper from "./Components/wrapper/Wrapper";
+import Movie from "./Components/Applications/Movies/Component/Movie";
+import Header from "./Components/Header/Header";
 const Data = createContext(); //example of context API
 
 const App = () => {
@@ -18,7 +16,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Wrapper />
+        <Header />
         <Data.Provider value={{ toggle, setToggle }}>
           <Routes>
             <Route path="/" element={<UseState />}></Route>
@@ -29,37 +27,10 @@ const App = () => {
             <Route path="/UseReducer" element={<UseReducer />}></Route>
             <Route path="/CustomHook" element={<CustomHook />}></Route>
             <Route path="/Record" element={<Record />}></Route>
+            <Route path="/movie-app" element={<Movie />} />
           </Routes>
         </Data.Provider>
       </BrowserRouter>
-
-      {/* <Data.Provider value={{ toggle, setToggle }}> */}
-      {/* <div className="parent bg-black text-white">
-       <Header />
-       <div className="card flex flex-wrap justify-between gap-5">
-         {movieData.map((movie, id) => {
-           return (
-             <Card
-               key={id}
-               image={movie.Poster}
-               title={movie.Title}
-               year={movie.Year}
-             />
-           );
-         })}
-       </div>
-     </div>
-     <Record/>
-     <UseState/>
-     <UseEffect/>
-    
-     <div className="div">
-       <UseRef/>
-     </div>
-     <UseReducer/>
-    <CustomHook/> */}
-      {/* <UseContext />
-      </Data.Provider> */}
     </>
   );
 };
