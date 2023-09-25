@@ -27,10 +27,10 @@ const App = () => {
             <Route path="/UseRef" element={<UseRef />}></Route>
             <Route path="/UseReducer" element={<UseReducer />}></Route>
             {/* <Route path="/CustomHook" element={<CustomHook />}></Route> */}
-            <Route path="/Record" element={<Record />}></Route>
+            <Route path="/Record" element={<Record />}></Route> 
             <Route path="/movie-app" element={<Movie />} />
-            <Route path="/usememo" element={<UseMemo/>} />
-            <Route path="/usecallback" element={<UseCallback/>} />
+            <Route path="/usememo" element={<UseMemo />} />
+            <Route path="/usecallback" element={<UseCallback />} />
           </Routes>
         </Data.Provider>
       </BrowserRouter>
