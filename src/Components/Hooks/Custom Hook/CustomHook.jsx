@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const CustomHook = (url) => {
   console.log('url', url);
@@ -16,7 +16,7 @@ const CustomHook = (url) => {
     getData();
     console.log("useEffecct");
   }, [url]);
-  return[dataList]
+  return [dataList]
 };
 
 export default CustomHook;

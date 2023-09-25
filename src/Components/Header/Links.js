@@ -7,7 +7,7 @@ export const Links = [
   {
     id: 1,
     route: "/useeffect",
-    ButtonName: "UseEffect",
+    ButtonName: "UseEffect & custom Hook",
   },
   {
     id: 2,
@@ -38,5 +38,15 @@ export const Links = [
     id: 7,
     route: "/movie-app",
     ButtonName: "Movie App",
+  },
+  {
+    id:8,
+    route: "/usememo",
+    ButtonName: "Use Memo",
+  },
+  {
+    id: 9,
+    route: "/usecallback",
+    ButtonName: "Use Callback",
   },
 ];

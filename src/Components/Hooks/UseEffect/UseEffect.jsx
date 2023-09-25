@@ -35,7 +35,8 @@ const UseEffect = () => {
     setCount(count + 5);
   };
   const fetchDataCustomHook = (e) => {
-    console.log(typeof e.target.id);
+    console.log(typeof(e.target.id));
+    // console.log('iiiii', i);
 
     setTab(Number(e.target.id));
   };
@@ -76,7 +77,7 @@ const UseEffect = () => {
                 {tab === 1 &&
                   data.map((ele, index) => {
                     return (
-                      <div
+                      <div  
                         key={index}
                         className="flex flex-col items-center justify-center"
                       >
@@ -95,7 +96,7 @@ const UseEffect = () => {
                           key={i}
                           className="flex flex-col items-center justify-center max-w-1/5"
                         >
-                          <img src={e.thumbnail} className='h-24 w-24'alt="employee-img" />
+                          <img src={e.thumbnail} className='h-24 w-24' alt="employee-img" />
                           <div className="div">
                           <h1>{e.brand}</h1>
                           </div>
