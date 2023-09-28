@@ -3,6 +3,11 @@ import React, { useMemo, useState } from "react";
 const UseMemo = () => {
   const [count, setCount] = useState(0);
   console.log("comp");
+  const id = crypto.randomUUID()
+  // const values =crypto.getRandomValues(new Uint8Array(1))
+  console.log("iddd-->>", id);
+  // console.log("values-->>", values);
+
   const increaseCount = () => {
     console.log("increament");
     setCount((prevState) => prevState + 1);
