@@ -49,4 +49,9 @@ export const Links = [
     route: "/usecallback",
     ButtonName: "Use Callback",
   },
+  {
+    id: 10,
+    route: "/usenavigate",
+    ButtonName: "Use Navigate",
+  },
 ];

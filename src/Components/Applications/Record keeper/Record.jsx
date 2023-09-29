@@ -63,7 +63,7 @@ const Record = () => {
                 return (
                   <div
                     key={i}
-                    className="div flex flex justify-between w-1/2 my-4"
+                    className="div  flex justify-between w-1/2 my-4"
                   >
                     <p>{item.name}</p>
                     <p>{item.email}</p>

@@ -9,11 +9,9 @@ const UseCallback = () => {
     setCount((prevState) => prevState + 1);
   };
 
-
-  const addTodo =  useCallback(()=>{
-    setTodo((prevState)=>[...prevState, 'NewTodo'])} ,[todo])
-  
-
+  const addTodo = useCallback(() => {
+    setTodo((prevState) => [...prevState, "NewTodo"]);
+  }, [todo]);
 
   return (
     <>

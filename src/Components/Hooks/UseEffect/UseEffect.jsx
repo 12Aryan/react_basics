@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../../Shared/loader/Loader";
 import CustomHook from "../Custom Hook/CustomHook";
