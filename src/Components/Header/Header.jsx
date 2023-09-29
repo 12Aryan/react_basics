@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className=" text-white flex justify-between px-10 py-5 flex-wrap">
+      <div className=" text-white flex justify-between px-10 py-5 flex-wrap gap-3">
         {Links.map((e, i) => {
           return (
            
@@ -20,7 +20,7 @@ const Header = () => {
                  
                   className={`${
                     currentPath === e.route ? "bg-pink-800" : "bg-black"
-                  } text-white px-6 py-2`}
+                  } text-white px-6 py-2 `}
                 >
                   {e.ButtonName}{" "}
                 </button>

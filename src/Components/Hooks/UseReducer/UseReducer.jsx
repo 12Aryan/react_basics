@@ -31,7 +31,7 @@ const UseReducer = () => {
   return (
     <div>
       <h1>{state}</h1>
-      <input value={input} type="number" onChange={(e) => handleChange(e)} />
+      <input value={input} type="number" className="border-black border-2" onChange={(e) => handleChange(e)} />
       <div className="flex justify-between">
         <button
           className="bg-black px-6 py-2 text-white"
