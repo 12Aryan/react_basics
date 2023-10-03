@@ -54,4 +54,14 @@ export const Links = [
     route: "/usenavigate",
     ButtonName: "Use Navigate",
   },
+  {
+    id: 11,
+    route: "/useparams",
+    ButtonName: "Use Params",
+  },
+  {
+    id: 12,
+    route: "/usesearchparams",
+    ButtonName: "Use Search Params",
+  },
 ];
