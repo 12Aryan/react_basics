@@ -26,7 +26,7 @@ const RefHook = () => {
   }
   return (
     <div>
-    <input value= {input}type="text" placeholder='type here' ref={inputField} onChange={handleChange} onBlur={removeFocus}/>
+    <input value= {input} type="text" placeholder='type here' ref={inputField} onChange={handleChange} onBlur={removeFocus}/>
       <button className="bg-black text-white px-6 py-3" onClick={handleClick} >press</button>
       <h1>This change will not cause a re render:  {data.current}</h1>
       <h2>This will cause a re render: {input}</h2>
